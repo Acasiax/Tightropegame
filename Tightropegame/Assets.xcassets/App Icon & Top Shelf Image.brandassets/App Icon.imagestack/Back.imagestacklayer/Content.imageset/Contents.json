@@ -1,10 +1,12 @@
 {
   "images" : [
     {
+      "filename" : "Korea2-006.png",
       "idiom" : "tv",
       "scale" : "1x"
     },
     {
+      "filename" : "KoreaBack800480-006.png",
       "idiom" : "tv",
       "scale" : "2x"
     }

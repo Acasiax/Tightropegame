@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		AA3F252B2B862AE200BC2761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA3F25292B862AE200BC2761 /* Main.storyboard */; };
 		AA3F252D2B862AE300BC2761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3F252C2B862AE300BC2761 /* Assets.xcassets */; };
 		AA3F25302B862AE300BC2761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA3F252E2B862AE300BC2761 /* LaunchScreen.storyboard */; };
+		AA3F25372B862B1C00BC2761 /* Dumpster.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F25362B862B1C00BC2761 /* Dumpster.swift */; };
+		AA3F25392B862B2E00BC2761 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F25382B862B2E00BC2761 /* Obstacle.swift */; };
+		AA3F253B2B862B4800BC2761 /* SKNodeUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F253A2B862B4800BC2761 /* SKNodeUpdate.swift */; };
+		AA3F253F2B862B5500BC2761 /* sfxOllie.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA3F253C2B862B5400BC2761 /* sfxOllie.wav */; };
+		AA3F25402B862B5500BC2761 /* sfxGameOver.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA3F253D2B862B5400BC2761 /* sfxGameOver.wav */; };
+		AA3F25412B862B5500BC2761 /* BeautifulKorea.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA3F253E2B862B5500BC2761 /* BeautifulKorea.wav */; };
+		AA3F25432B862B6A00BC2761 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F25422B862B6A00BC2761 /* GameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,13 @@
 		AA3F252A2B862AE200BC2761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA3F252C2B862AE300BC2761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA3F252F2B862AE300BC2761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA3F25362B862B1C00BC2761 /* Dumpster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dumpster.swift; sourceTree = "<group>"; };
+		AA3F25382B862B2E00BC2761 /* Obstacle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		AA3F253A2B862B4800BC2761 /* SKNodeUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKNodeUpdate.swift; sourceTree = "<group>"; };
+		AA3F253C2B862B5400BC2761 /* sfxOllie.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sfxOllie.wav; sourceTree = "<group>"; };
+		AA3F253D2B862B5400BC2761 /* sfxGameOver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sfxGameOver.wav; sourceTree = "<group>"; };
+		AA3F253E2B862B5500BC2761 /* BeautifulKorea.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BeautifulKorea.wav; sourceTree = "<group>"; };
+		AA3F25422B862B6A00BC2761 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +77,14 @@
 				AA3F25212B862AE200BC2761 /* GameScene.sks */,
 				AA3F25232B862AE200BC2761 /* Actions.sks */,
 				AA3F25252B862AE200BC2761 /* GameScene.swift */,
+				AA3F25422B862B6A00BC2761 /* GameManager.swift */,
 				AA3F25272B862AE200BC2761 /* GameViewController.swift */,
+				AA3F25362B862B1C00BC2761 /* Dumpster.swift */,
+				AA3F25382B862B2E00BC2761 /* Obstacle.swift */,
+				AA3F253A2B862B4800BC2761 /* SKNodeUpdate.swift */,
+				AA3F253E2B862B5500BC2761 /* BeautifulKorea.wav */,
+				AA3F253D2B862B5400BC2761 /* sfxGameOver.wav */,
+				AA3F253C2B862B5400BC2761 /* sfxOllie.wav */,
 				AA3F25292B862AE200BC2761 /* Main.storyboard */,
 				AA3F252C2B862AE300BC2761 /* Assets.xcassets */,
 				AA3F252E2B862AE300BC2761 /* LaunchScreen.storyboard */,
@@ -107,7 +128,7 @@
 				};
 			};
 			buildConfigurationList = AA3F25172B862AE200BC2761 /* Build configuration list for PBXProject "Tightropegame" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -130,7 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA3F252B2B862AE200BC2761 /* Main.storyboard in Resources */,
+				AA3F25412B862B5500BC2761 /* BeautifulKorea.wav in Resources */,
 				AA3F25222B862AE200BC2761 /* GameScene.sks in Resources */,
+				AA3F253F2B862B5500BC2761 /* sfxOllie.wav in Resources */,
+				AA3F25402B862B5500BC2761 /* sfxGameOver.wav in Resources */,
 				AA3F252D2B862AE300BC2761 /* Assets.xcassets in Resources */,
 				AA3F25302B862AE300BC2761 /* LaunchScreen.storyboard in Resources */,
 				AA3F25242B862AE200BC2761 /* Actions.sks in Resources */,
@@ -145,6 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA3F25262B862AE200BC2761 /* GameScene.swift in Sources */,
+				AA3F25372B862B1C00BC2761 /* Dumpster.swift in Sources */,
+				AA3F253B2B862B4800BC2761 /* SKNodeUpdate.swift in Sources */,
+				AA3F25432B862B6A00BC2761 /* GameManager.swift in Sources */,
+				AA3F25392B862B2E00BC2761 /* Obstacle.swift in Sources */,
 				AA3F25282B862AE200BC2761 /* GameViewController.swift in Sources */,
 				AA3F25202B862AE200BC2761 /* AppDelegate.swift in Sources */,
 			);
@@ -205,6 +233,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution: yunji LEE (4KLMMMFY4D)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -228,9 +257,11 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
 				TVOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Debug;
@@ -268,6 +299,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution: yunji LEE (4KLMMMFY4D)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -284,8 +316,10 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = "";
 				TVOS_DEPLOYMENT_TARGET = 17.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -296,10 +330,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4KLMMMFY4D;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = 4KLMMMFY4D;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tightrope Escape";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
@@ -307,9 +345,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.acasia.Tightropegame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "Appstore 4KLMMMFY4D.com.acasia.Tightropegame";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -321,10 +361,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4KLMMMFY4D;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = 4KLMMMFY4D;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tightrope Escape";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
@@ -332,9 +376,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.acasia.Tightropegame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=appletvos*]" = "Appstore 4KLMMMFY4D.com.acasia.Tightropegame";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
